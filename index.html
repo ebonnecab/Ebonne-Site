@@ -2,35 +2,57 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Ebonne Cabarrus</title>
-    <link re="stylesheet" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
 </head>
 
-<body>
-    <div class="header">
-        <header>
+<div class="container">
+
+    <body>
+        <div class="header">
             <h1>Ebonne Cabarrus</h1>
-        </header>
-    </div>
-    <div class="nav-bar">
-        <nav>
-            <button class="btn"><i class="fas fa-home"></i>Home</button>
-            <button class="btn"><i class="far fa-dizzy"></i>About Me</button>
-            <button class="btn"><i class="far fa-dizzy"></i>Portfolio</button>
-            <button type="btn"><i class="fas fa-phone"></i>Contact</button>
+        </div>
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li class="About-me"><a href="#">About Me</a> </li>
+                    <li class="Cartoons"> <a href="#">Cartoons</a></li>
+                    <li class="Music"><a href="#">Music</a></li>
+                    <li class="Art"><a href="#">Art</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="About-me">
+            <h2>About Me</h2>
+            <p> Ebonne Cabarrus is a 25 year old Software Engineering Student. She loves music, cartoons, and art. Follow the rabbit hole to explore her interests and ideas.</p>
+        </div>
 
-            <!--    <li>Contact Info</li>
-            -->
-        </nav>
-    </div>
-    <section>
-        <h1>Software Developer</h1>
-        <h2>Style. Efficiency. Moxie.</h2>
-    </section>
+        <div class="Cartoons">
+            <h3>Cartoons</h3>
+            <p>Ebonne has drawn inspiration and entertainment from cartoons her whole life. They enable her to transcend the boundaries of reality to explore infinite possibilites.</p>
+            <h4>Favorite Cartoons</h4>
+            <ul>
+                <li>The Amazing World of Gumball</li>
+                <li>Rick and Morty</li>
+                <li>Aggretsuko</li>
+                <li>Family Guy</li>
+            </ul>
+        </div>
+        <div class="Music">
+            <h3>Music</h3>
 
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-</body>
+            <p>Check out my Spotify Playlist to hear my favorite artists currently!</p>
+            <p>WARNING!</p>
+            <p>GRITTY and EXPLICIT CONTENT!<br> CONSUME AT YOUR OWN RISK</p>
+            <div class="Playlist"><iframe src="https://open.spotify.com/embed/user/qhbjwv71x20ey8mxhwq45nfwi/playlist/2cxSsN6gE37Q12DSJI4e04" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            <div class="Follow-button"><iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:qhbjwv71x20ey8mxhwq45nfwi&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe></div>
+        </div>
+        <div class="Art">
+            <h3>Art</h3>
+        </div>
+    </body>
+</div>
 
 </html>

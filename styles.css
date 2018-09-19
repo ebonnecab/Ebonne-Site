@@ -1,4 +1,84 @@
-.container{
+body {
+    font-size: 24px;
+    line-height: 1.5;
+    width: 75%;
+    height: auto;
+    margin: auto;
+    background-color: #f5f5f5;
+
+}
+
+h1{
+    font-size: 2em;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #7fffd4;
+
+}
+h2, h3{
+    /* font-size: 2em; */
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    /* border: solid 15px #b0e2ff; */
+    /* border-width: thick; */
+    padding: 1em;
     display: grid;
-    
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "d d . . f f"
+                         "d d c c f f"
+                         "d d c c f f"
+                         "d d . . f f"
+                         "e e e e e e"
+                         "e e e e e e";
+
+
+
+    /* height: 900px; */
+}
+.container > div {
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.My-passions{
+    grid-area: c;
+}
+.Cartoons{
+    grid-area: d;
+}
+.Music{
+    grid-area: e;
+
+}
+.Art{
+    grid-area: f;
+}
+
+.container > div:nth-child(2) {
+    background-color: #fdfd96
+}
+.container > div:nth-child(3) {
+    background-color: #ffd1dc
+}
+.container > div:nth-child(4) {
+    background-color: #77dd77
+}
+.container > div:nth-child(5) {
+    background-color: #7fffd4
 }

@@ -1,10 +1,10 @@
 
 body {
-    width: 75%;
+    width: 100%;
     height: auto;
     margin: auto;
-     background: url(images/blue-bright-citrus-405031.jpg) no-repeat center center fixed;
-     background-size: cover;
+    background: url(images/blue-bright-citrus-405031.jpg) no-repeat center center fixed;
+    background-size: cover;
     
 }
 .nav-bar{
@@ -17,7 +17,7 @@ body {
     flex-direction: row;
     height: 50px;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     
 }
@@ -40,15 +40,38 @@ body {
     transform: scale(1.1) rotate(5deg) translateX(10px);
 }
 
+h1{
+    margin-top: 20px;
+    font-family: 'Monoton', cursive;
+    color: white;
+    font-size: 200px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
 
- h1, h2, h3{
+}
+
+.welcome-header{
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    margin: 25px;
+    padding-top: 50px;
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.module h3{
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-weight: bold;
 
 }
-p{
+.module p{
     font-size: 25px;
     font-family: 'Raleway', sans-serif;
     color: white;
@@ -60,7 +83,7 @@ p{
     grid-gap: 10px, 5px;
     grid-template-columns:repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: ". c c c c ."
+    grid-template-areas: "c c c c c c"
                          "d d d e e e"
                          "d d d e e e"
                          "f f f g g g"
@@ -72,14 +95,15 @@ p{
      /* height: 900px; */
 }
 .container > div {
-    padding: 1em;
+    padding: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border: #ffd1dc bold 10px;
 }
 
 
-.About-me{
+.Welcome-page{
     grid-area: c;
 }
 .Cartoons{
